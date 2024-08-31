@@ -6,8 +6,6 @@ services:
       dockerfile: Dockerfile
     image:
       softy-pinko-front-end:task6
-    ports:
-      - "8080:80"
     depends_on:
       - back-end
 
@@ -17,8 +15,6 @@ services:
       dockerfile: Dockerfile
     image:
       softy-pinko-back-end:task6
-    ports:
-      - "5252:5252"
 
   proxy:
     build:
